@@ -1,7 +1,12 @@
 import style from './../assets/css/todo.module.css'
+
+
 const Todo = (props) =>{
     const {title, desc} = props.todo
-    const btnHandler = (id) => props.onRemoveTodo(id)
+    const btnHandler = (id) =>{
+        props.onRemoveTodo(id)
+        
+    }
     
     return(
        <article className={style.todo}>

@@ -12,6 +12,7 @@ const NewTodo = (props) =>{
         event.preventDefault()
         props.onChildData(todo)
         setTodo({title:"", desc:""})
+       
     }
     return(
         <form className={style.form} onSubmit={handleSubmit}>
